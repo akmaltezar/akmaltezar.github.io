@@ -52,9 +52,9 @@ export function ContactPanel({ id }: { id: string }) {
             </span>
           </div>
           <div className="contact-row">
-            <span className="label">resume</span>
+            <span className="label">my cv</span>
             <a href={resume_url} target="_blank" rel="noreferrer">
-              resume.pdf <span aria-hidden="true">↗</span>
+              download pdf file <span aria-hidden="true">↗</span>
             </a>
           </div>
         </div>
