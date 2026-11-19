@@ -107,11 +107,19 @@ export const skills: readonly { group: string; items: readonly string[] }[] = [
       "Axios",
       "Material UI",
       "Bootstrap",
+      "styled-component",
+      "TailwindCSS",
+      "SASS",
+      "LESS"
     ],
   },
   {
     group: "backend",
-    items: ["Laravel", "Firebase", "Supabase", "API integration"],
+    items: ["Laravel", "Express", "API integration"],
+  },
+  {
+    group: "database",
+    items: ["mySQL", "PostgreSQL", "Firebase", "Supabase",],
   },
   {
     group: "realtime",
