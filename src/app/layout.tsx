@@ -6,17 +6,19 @@ import { site } from "@/lib/content";
 import "./globals.css";
 
 const description =
-  "Portfolio of Akmal Tezar, a mobile and frontend engineer in Indonesia building React Native, React and Laravel products — from mobile banking onboarding to IoT hotel apps.";
+  "Portfolio of Akmal Tezar, a fullstack engineer in Indonesia building mobile and web products across React Native, React and Laravel — from mobile banking onboarding to IoT hotel apps.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
-  title: "Akmal Tezar — Mobile & Frontend Engineer",
+  title: `${site.name} — ${site.role}`,
   description,
   applicationName: "Akmal Tezar",
   authors: [{ name: site.name, url: site.url }],
   creator: site.name,
   keywords: [
     "Akmal Tezar",
+    "Fullstack Engineer",
+    "Fullstack Developer",
     "Mobile Engineer",
     "Frontend Engineer",
     "React Native",
@@ -33,7 +35,7 @@ export const metadata: Metadata = {
     type: "website",
     url: "/",
     siteName: site.name,
-    title: "Akmal Tezar — Mobile & Frontend Engineer",
+    title: `${site.name} — ${site.role}`,
     description,
     locale: "en_US",
     images: [
@@ -41,13 +43,13 @@ export const metadata: Metadata = {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "Akmal Tezar — Mobile & Frontend Engineer",
+        alt: `${site.name} — ${site.role}`,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Akmal Tezar — Mobile & Frontend Engineer",
+    title: `${site.name} — ${site.role}`,
     description,
     images: ["/og.png"],
   },

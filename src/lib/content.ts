@@ -1,7 +1,10 @@
+const roles = ["Fullstack Developer", "Mobile", "Frontend"] as const;
+
 export const site = {
   url: "https://akmaltezar.github.io",
   name: "Akmal Tezar",
-  role: "Mobile & Frontend Engineer",
+  role: roles[0],
+  roles,
   email: "akmaltezar.workspace@gmail.com",
   github: "https://github.com/akmaltezar",
   linkedin: "https://www.linkedin.com/in/akmal-tezar-a0379b235",

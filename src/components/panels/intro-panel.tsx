@@ -22,7 +22,15 @@ export function IntroPanel({
         <h1 id="intro-title" className="intro-name">
           Akmal<span>Tezar</span>
         </h1>
-        <p className="intro-role mono">{site.role}</p>
+        <ul className="intro-roles mono" aria-label="Role and focus">
+          {site.roles.map((role, index) => (
+            <li
+              key={role}
+              className={"intro-role intro-role--primary"}>
+              {role}
+            </li>
+          ))}
+        </ul>
         <p className="intro-pitch">{intro.pitch}</p>
         <p className="intro-sub">{intro.pitchSecondary}</p>
 

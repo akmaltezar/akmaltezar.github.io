@@ -451,11 +451,31 @@ html[data-theme="dark"] .shape.is-accent {
   display: block;
 }
 
-.intro-role {
+.intro-roles {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 7px;
   margin-top: clamp(18px, 3vh, 30px);
-  font-size: clamp(12px, 1.1vw, 14px);
-  letter-spacing: 0.16em;
+}
+
+.intro-role {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 11px 6px;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  font-size: clamp(11px, 1vw, 12.5px);
+  line-height: 1.2;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.intro-role--primary {
+  border-color: var(--accent);
+  background: var(--accent-soft);
   color: var(--accent);
 }
 
